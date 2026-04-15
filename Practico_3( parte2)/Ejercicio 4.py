@@ -13,7 +13,7 @@ rows, cols = img.shape
 crow, ccol = rows//2, cols//2  
 
 mask = np.zeros((rows, cols), np.uint8)
-r = 30
+r = 30 
 cv2.circle(mask, (ccol, crow), r, 1, -1)
 
 fshift_filtered = fshift * mask
